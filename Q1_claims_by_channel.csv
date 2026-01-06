@@ -1,0 +1,5 @@
+sales_channel,total_claims,avg_claims_per_customer,number_of_customers
+Agent,51958,14.94,3477
+Branch,39083,15.23,2567
+Call Center,27155,15.39,1765
+Web,19700,14.87,1325

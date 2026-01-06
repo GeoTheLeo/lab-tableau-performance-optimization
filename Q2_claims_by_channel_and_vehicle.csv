@@ -1,0 +1,25 @@
+sales_channel,vehicle_class,total_claims,avg_claims_per_customer,number_of_customers
+Agent,Four-Door Car,26765,15.06,1777
+Branch,Four-Door Car,19786,15.57,1271
+Call Center,Four-Door Car,13069,14.9,877
+Web,Four-Door Car,10418,14.97,696
+Agent,SUV,10101,14.77,684
+Agent,Two-Door Car,10047,14.6,688
+Branch,Two-Door Car,8438,15.09,559
+Branch,SUV,7412,14.65,506
+Call Center,Two-Door Car,6352,16.54,384
+Call Center,SUV,5607,15.24,368
+Web,Two-Door Car,3958,15.52,255
+Web,SUV,3290,13.82,238
+Agent,Sports Car,2977,15.51,192
+Branch,Sports Car,2102,15.46,136
+Agent,Luxury SUV,1343,15.09,89
+Call Center,Sports Car,1144,14.86,77
+Web,Sports Car,1096,13.87,79
+Branch,Luxury Car,775,13.6,57
+Agent,Luxury Car,725,15.43,47
+Call Center,Luxury Car,597,17.56,34
+Branch,Luxury SUV,570,15.0,38
+Web,Luxury SUV,512,16.0,32
+Web,Luxury Car,426,17.04,25
+Call Center,Luxury SUV,386,15.44,25

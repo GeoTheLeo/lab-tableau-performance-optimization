@@ -1,0 +1,3607 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='worksheet'>
+      <format attr='font-size' value='11' />
+    </style-rule>
+    <style-rule element='story-title'>
+      <format attr='font-size' value='18' />
+    </style-rule>
+    <style-rule element='all'>
+      <format attr='font-family' value='Times New Roman' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Sheet1 (marketing_customer_cleaned)' inline='true' name='federated.00vixsk017muol19oroqo1b3tb4j' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='marketing_customer_cleaned' name='excel-direct.0dzs8ig1vsqb9k1agkd6b1v3yow2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/profe/Documents/Ironhack/lab-tableau-performance-optimization/marketing_customer_cleaned.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0dzs8ig1vsqb9k1agkd6b1v3yow2' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:X9135:no:A1:X9135:0' header='yes' outcome='6'>
+            <column datatype='string' name='customer' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='real' name='customer_lifetime_value' ordinal='2' />
+            <column datatype='string' name='response' ordinal='3' />
+            <column datatype='string' name='coverage' ordinal='4' />
+            <column datatype='string' name='education' ordinal='5' />
+            <column datatype='date' date-parse-format='MM/dd/yy' name='effective_to_date' ordinal='6' />
+            <column datatype='string' name='employmentstatus' ordinal='7' />
+            <column datatype='string' name='gender' ordinal='8' />
+            <column datatype='integer' name='income' ordinal='9' />
+            <column datatype='string' name='location_code' ordinal='10' />
+            <column datatype='string' name='marital_status' ordinal='11' />
+            <column datatype='integer' name='monthly_premium_auto' ordinal='12' />
+            <column datatype='integer' name='months_since_last_claim' ordinal='13' />
+            <column datatype='integer' name='months_since_policy_inception' ordinal='14' />
+            <column datatype='integer' name='number_of_open_complaints' ordinal='15' />
+            <column datatype='integer' name='number_of_policies' ordinal='16' />
+            <column datatype='string' name='policy_type' ordinal='17' />
+            <column datatype='string' name='policy' ordinal='18' />
+            <column datatype='string' name='renew_offer_type' ordinal='19' />
+            <column datatype='string' name='sales_channel' ordinal='20' />
+            <column datatype='real' name='total_claim_amount' ordinal='21' />
+            <column datatype='string' name='vehicle_class' ordinal='22' />
+            <column datatype='string' name='vehicle_size' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:X9135:no:A1:X9135:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>customer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_lifetime_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[customer_lifetime_value]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>customer_lifetime_value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[response]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>response</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coverage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[coverage]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>coverage</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>education</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[education]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>education</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>effective_to_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[effective_to_date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>effective_to_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employmentstatus</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[employmentstatus]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>employmentstatus</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[income]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>income</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location_code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>location_code</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marital_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[marital_status]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>marital_status</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>monthly_premium_auto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[monthly_premium_auto]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>monthly_premium_auto</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>months_since_last_claim</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[months_since_last_claim]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>months_since_last_claim</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>months_since_policy_inception</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[months_since_policy_inception]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>months_since_policy_inception</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_open_complaints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_open_complaints]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>number_of_open_complaints</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_policies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_policies]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>number_of_policies</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[policy_type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>policy_type</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[policy]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>policy</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>renew_offer_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[renew_offer_type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>renew_offer_type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales_channel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sales_channel]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>sales_channel</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_claim_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_claim_amount]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>total_claim_amount</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vehicle_class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[vehicle_class]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>vehicle_class</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vehicle_size</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[vehicle_size]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>vehicle_size</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Claim to Premium Ratio' datatype='real' name='[Calculation_1695470912868352]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([number_of_open_complaints]) / SUM([monthly_premium_auto])' />
+      </column>
+      <column caption='Avg Claims Per Customer' datatype='real' name='[Calculation_3678163392954368]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([number_of_open_complaints]) / COUNTD([customer])' />
+      </column>
+      <column caption='Avg Claims' datatype='real' name='[Calculation_3678163400970241]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([number_of_open_complaints])' />
+      </column>
+      <column caption='Claim Category' datatype='string' name='[Calculation_3678163415142402]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [number_of_open_complaints] = 0 THEN &quot;No Claims&quot;&#13;&#10;ELSEIF [number_of_open_complaints] &lt;= 2 THEN &quot;Low (1-2)&quot;&#13;&#10;ELSEIF [number_of_open_complaints] &lt;= 4 THEN &quot;Medium (3-4)&quot;&#13;&#10;ELSE &quot;High (5+)&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Months Since Policy Start' datatype='integer' name='[Calculation_3678163419312131]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;month&apos;, [effective_to_date], TODAY())' />
+      </column>
+      <column caption='Total Premium Paid' datatype='integer' name='[Calculation_3678163419619332]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[monthly_premium_auto] * [Calculation_3678163419312131]' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Effective To Date (Weekdays)]' role='dimension' type='ordinal' user:agg-type='Weekday' user:base-field='effective_to_date' user:ui-builder='date-bin-builder'>
+        <calculation class='tableau' formula='DATEPART(&apos;weekday&apos;, [effective_to_date])' />
+      </column>
+      <column aggregation='None' caption='Months Since Policy Start (bin)' datatype='integer' name='[Months Since Policy Start (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Calculation_3678163419312131]' peg='0' size='6' />
+      </column>
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_EA615915D6094E34B7605116D9661AF4]' role='measure' type='quantitative' />
+      <column caption='Coverage' datatype='string' name='[coverage]' role='dimension' type='nominal' />
+      <column caption='Customer' datatype='string' name='[customer]' role='dimension' type='nominal' />
+      <column caption='Customer Lifetime Value' datatype='real' name='[customer_lifetime_value]' role='measure' type='quantitative' />
+      <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+      <column caption='Effective To Date' datatype='date' datatype-customized='true' name='[effective_to_date]' role='dimension' type='ordinal' />
+      <column caption='Employmentstatus' datatype='string' name='[employmentstatus]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Income' datatype='integer' name='[income]' role='measure' type='quantitative' />
+      <column caption='Location Code' datatype='string' name='[location_code]' role='dimension' type='nominal' />
+      <column caption='Marital Status' datatype='string' name='[marital_status]' role='dimension' type='nominal' />
+      <column caption='Monthly Premium Auto' datatype='integer' name='[monthly_premium_auto]' role='measure' type='quantitative' />
+      <column caption='Months Since Last Claim' datatype='integer' name='[months_since_last_claim]' role='measure' type='quantitative' />
+      <column caption='Months Since Policy Inception' datatype='integer' name='[months_since_policy_inception]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+      <column caption='Number Of Policies' datatype='integer' name='[number_of_policies]' role='measure' type='quantitative' />
+      <column caption='Policy' datatype='string' name='[policy]' role='dimension' type='nominal' />
+      <column caption='Policy Type' datatype='string' name='[policy_type]' role='dimension' type='nominal' />
+      <column caption='Renew Offer Type' datatype='string' name='[renew_offer_type]' role='dimension' type='nominal' />
+      <column caption='Response' datatype='string' name='[response]' role='dimension' type='nominal' />
+      <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Claim Amount' datatype='real' name='[total_claim_amount]' role='measure' type='quantitative' />
+      <column caption='Vehicle Class' datatype='string' name='[vehicle_class]' role='dimension' type='nominal' />
+      <column caption='Vehicle Size' datatype='string' name='[vehicle_size]' role='dimension' type='nominal' />
+      <column-instance column='[monthly_premium_auto]' derivation='Avg' name='[avg:monthly_premium_auto:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[vehicle_class]' derivation='None' name='[none:vehicle_class:nk]' pivot='key' type='nominal' />
+      <column-instance column='[monthly_premium_auto]' derivation='Sum' name='[sum:monthly_premium_auto:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Sales Channel)' hidden='true' name='[Action (Sales Channel)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[sales_channel]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (State)' hidden='true' name='[Action (State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[state]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/profe/AppData/Local/Temp/TableauTemp/#TableauTemp_0j03mw610b4lj519lwwf71te0opj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/29/2025 10:14:00 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='MM/dd/yy' name='effective_to_date' />
+            </columns>
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9134</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_lifetime_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[customer_lifetime_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_lifetime_value</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4310</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[response]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coverage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[coverage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coverage</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>education</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>education</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>effective_to_date</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[effective_to_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>effective_to_date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>employmentstatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[employmentstatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>employmentstatus</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>income</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3256</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location_code</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marital_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[marital_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marital_status</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>monthly_premium_auto</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[monthly_premium_auto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>monthly_premium_auto</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>months_since_last_claim</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[months_since_last_claim]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>months_since_last_claim</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>months_since_policy_inception</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[months_since_policy_inception]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>months_since_policy_inception</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_open_complaints</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_open_complaints]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_open_complaints</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_policies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_policies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_policies</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>policy_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[policy_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>policy_type</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>policy</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[policy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>policy</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>renew_offer_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[renew_offer_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>renew_offer_type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sales_channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sales_channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sales_channel</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_claim_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_claim_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_claim_amount</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2337</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vehicle_class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[vehicle_class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vehicle_class</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vehicle_size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[vehicle_size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vehicle_size</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_EA615915D6094E34B7605116D9661AF4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:vehicle_class:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Four-Door Car&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SUV&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Sports Car&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Luxury SUV&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Two-Door Car&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Luxury Car&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.00vixsk017muol19oroqo1b3tb4j].[avg:monthly_premium_auto:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.00vixsk017muol19oroqo1b3tb4j].[sum:monthly_premium_auto:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='customer' />
+        <field-sort-custom-order field='state' />
+        <field-sort-custom-order field='customer_lifetime_value' />
+        <field-sort-custom-order field='response' />
+        <field-sort-custom-order field='Calculation_3678163415142402' />
+        <field-sort-custom-order field='Calculation_3678163400970241' />
+        <field-sort-custom-order field='Calculation_3678163392954368' />
+        <field-sort-custom-order field='coverage' />
+        <field-sort-custom-order field='education' />
+        <field-sort-custom-order field='effective_to_date' />
+        <field-sort-custom-order field='employmentstatus' />
+        <field-sort-custom-order field='gender' />
+        <field-sort-custom-order field='income' />
+        <field-sort-custom-order field='Calculation_1695470912868352' />
+        <field-sort-custom-order field='location_code' />
+        <field-sort-custom-order field='Calculation_3678163419619332' />
+        <field-sort-custom-order field='marital_status' />
+        <field-sort-custom-order field='Calculation_3678163419312131' />
+        <field-sort-custom-order field='monthly_premium_auto' />
+        <field-sort-custom-order field='months_since_last_claim' />
+        <field-sort-custom-order field='months_since_policy_inception' />
+        <field-sort-custom-order field='number_of_open_complaints' />
+        <field-sort-custom-order field='number_of_policies' />
+        <field-sort-custom-order field='policy_type' />
+        <field-sort-custom-order field='policy' />
+        <field-sort-custom-order field='renew_offer_type' />
+        <field-sort-custom-order field='sales_channel' />
+        <field-sort-custom-order field='total_claim_amount' />
+        <field-sort-custom-order field='vehicle_class' />
+        <field-sort-custom-order field='vehicle_size' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_EA615915D6094E34B7605116D9661AF4'>
+            <properties context=''>
+              <relation connection='excel-direct.0dzs8ig1vsqb9k1agkd6b1v3yow2' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:X9135:no:A1:X9135:0' header='yes' outcome='6'>
+                  <column datatype='string' name='customer' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='real' name='customer_lifetime_value' ordinal='2' />
+                  <column datatype='string' name='response' ordinal='3' />
+                  <column datatype='string' name='coverage' ordinal='4' />
+                  <column datatype='string' name='education' ordinal='5' />
+                  <column datatype='date' date-parse-format='MM/dd/yy' name='effective_to_date' ordinal='6' />
+                  <column datatype='string' name='employmentstatus' ordinal='7' />
+                  <column datatype='string' name='gender' ordinal='8' />
+                  <column datatype='integer' name='income' ordinal='9' />
+                  <column datatype='string' name='location_code' ordinal='10' />
+                  <column datatype='string' name='marital_status' ordinal='11' />
+                  <column datatype='integer' name='monthly_premium_auto' ordinal='12' />
+                  <column datatype='integer' name='months_since_last_claim' ordinal='13' />
+                  <column datatype='integer' name='months_since_policy_inception' ordinal='14' />
+                  <column datatype='integer' name='number_of_open_complaints' ordinal='15' />
+                  <column datatype='integer' name='number_of_policies' ordinal='16' />
+                  <column datatype='string' name='policy_type' ordinal='17' />
+                  <column datatype='string' name='policy' ordinal='18' />
+                  <column datatype='string' name='renew_offer_type' ordinal='19' />
+                  <column datatype='string' name='sales_channel' ordinal='20' />
+                  <column datatype='real' name='total_claim_amount' ordinal='21' />
+                  <column datatype='string' name='vehicle_class' ordinal='22' />
+                  <column datatype='string' name='vehicle_size' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='MM/dd/yy' name='effective_to_date' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 2 (generated)' name='[Action2_2B2B887B21B34B71A5A106E41064A337]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='User Profile Analysis' type='sheet' worksheet='Claims by Location' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='User Profile Analysis' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Channel Vehicle Numbers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column-instance column='[number_of_open_complaints]' derivation='None' name='[none:number_of_open_complaints:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[sales_channel]' derivation='None' name='[none:sales_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[vehicle_class]' derivation='None' name='[none:vehicle_class:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column caption='Vehicle Class' datatype='string' name='[vehicle_class]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:number_of_open_complaints:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([sales_channel])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:number_of_open_complaints:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[none:number_of_open_complaints:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.00vixsk017muol19oroqo1b3tb4j].[none:sales_channel:nk] / [federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{0BF9E2E0-321C-45A5-89B7-EC2345ACA596}' />
+    </worksheet>
+    <worksheet name='Claims Trend by Vehicle Class'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Effective To Date' datatype='date' datatype-customized='true' name='[effective_to_date]' role='dimension' type='ordinal' />
+            <column-instance column='[vehicle_class]' derivation='None' name='[none:vehicle_class:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[effective_to_date]' derivation='Quarter' name='[qr:effective_to_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column caption='Vehicle Class' datatype='string' name='[vehicle_class]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]' direction='DESC' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.00vixsk017muol19oroqo1b3tb4j].[qr:effective_to_date:ok]' value='116' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[qr:effective_to_date:ok]</cols>
+      </table>
+      <simple-id uuid='{39CDE2D8-4D76-4BED-BE83-586089B344D9}' />
+    </worksheet>
+    <worksheet name='Claims by Coverage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Coverage' datatype='string' name='[coverage]' role='dimension' type='nominal' />
+            <column-instance column='[coverage]' derivation='None' name='[none:coverage:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:coverage:nk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:coverage:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{AA7114BD-9190-47C4-B0FC-73133DF552C8}' />
+    </worksheet>
+    <worksheet name='Claims by Day of Week'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column aggregation='Sum' datatype='integer' name='[Effective To Date (Weekdays)]' role='dimension' type='ordinal' user:agg-type='Weekday' user:base-field='effective_to_date' user:ui-builder='date-bin-builder'>
+              <calculation class='tableau' formula='DATEPART(&apos;weekday&apos;, [effective_to_date])' />
+            </column>
+            <column caption='Effective To Date' datatype='date' datatype-customized='true' name='[effective_to_date]' role='dimension' type='ordinal' />
+            <column-instance column='[Effective To Date (Weekdays)]' derivation='None' name='[none:Effective To Date (Weekdays):ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.00vixsk017muol19oroqo1b3tb4j].[none:Effective To Date (Weekdays):ok]' value='117' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:Effective To Date (Weekdays):ok]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[none:Effective To Date (Weekdays):ok]</cols>
+      </table>
+      <simple-id uuid='{13330563-1E75-4A7F-AEB4-85ECEEE77557}' />
+    </worksheet>
+    <worksheet name='Claims by Education'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[pcto:sum:number_of_open_complaints:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:education:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:education:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[pcto:sum:number_of_open_complaints:qk:2]</cols>
+      </table>
+      <simple-id uuid='{91BE157A-0611-4654-8407-C750C2B0C268}' />
+    </worksheet>
+    <worksheet name='Claims by Employment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Employmentstatus' datatype='string' name='[employmentstatus]' role='dimension' type='nominal' />
+            <column-instance column='[employmentstatus]' derivation='None' name='[none:employmentstatus:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:employmentstatus:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:employmentstatus:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{6CABD39C-EF9C-447C-8944-83B0821CAE2E}' />
+    </worksheet>
+    <worksheet name='Claims by Gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Avg Claims Per Customer' datatype='real' name='[Calculation_3678163392954368]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([number_of_open_complaints]) / COUNTD([customer])' />
+            </column>
+            <column-instance column='[customer]' derivation='CountD' name='[ctd:customer:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer' datatype='string' name='[customer]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[customer]' derivation='None' name='[none:customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3678163392954368]' derivation='User' name='[usr:Calculation_3678163392954368:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:customer:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([number_of_open_complaints])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:customer:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[none:customer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:gender:nk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[usr:Calculation_3678163392954368:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.00vixsk017muol19oroqo1b3tb4j].[none:gender:nk] * [federated.00vixsk017muol19oroqo1b3tb4j].[ctd:customer:qk])</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{F62CFF3A-A457-4538-B218-DBD53FCF8111}' />
+    </worksheet>
+    <worksheet name='Claims by Location'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <size column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <lod column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:state:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[Latitude (generated)]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8F955CA2-C099-4444-9F06-C269F16F9C3C}' />
+    </worksheet>
+    <worksheet name='Claims by Marital Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Marital Status' datatype='string' name='[marital_status]' role='dimension' type='nominal' />
+            <column-instance column='[marital_status]' derivation='None' name='[none:marital_status:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:marital_status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:marital_status:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{9F5A70A3-8715-4E86-9F72-A0335120C7FC}' />
+    </worksheet>
+    <worksheet name='Claims by Policy Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column-instance column='[policy_type]' derivation='None' name='[none:policy_type:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='Policy Type' datatype='string' name='[policy_type]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Washington&quot;' user:ui-action-filter='[Action2_2B2B887B21B34B71A5A106E41064A337]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:policy_type:nk]' />
+              <wedge-size column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:policy_type:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{5F8C7445-2253-4B36-B726-5365ED7E2E1F}' />
+    </worksheet>
+    <worksheet name='Claims by Vehicle Size'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Monthly Premium Auto' datatype='integer' name='[monthly_premium_auto]' role='measure' type='quantitative' />
+            <column-instance column='[vehicle_size]' derivation='None' name='[none:vehicle_size:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[monthly_premium_auto]' derivation='Sum' name='[sum:monthly_premium_auto:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column caption='Vehicle Size' datatype='string' name='[vehicle_size]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:monthly_premium_auto:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:monthly_premium_auto:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk]</rows>
+        <cols>([federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk] + [federated.00vixsk017muol19oroqo1b3tb4j].[sum:monthly_premium_auto:qk])</cols>
+      </table>
+      <simple-id uuid='{9FF73054-7BD3-4B90-AB50-CA67D7BE64AE}' />
+    </worksheet>
+    <worksheet name='Education vs Employment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column caption='Employmentstatus' datatype='string' name='[employmentstatus]' role='dimension' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[employmentstatus]' derivation='None' name='[none:employmentstatus:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Washington&quot;' user:ui-action-filter='[Action2_2B2B887B21B34B71A5A106E41064A337]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:employmentstatus:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.00vixsk017muol19oroqo1b3tb4j].[none:education:nk] / [federated.00vixsk017muol19oroqo1b3tb4j].[none:employmentstatus:nk])</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{D9DB4DB0-D284-4FF2-8ECF-FC1D64E2DE77}' />
+    </worksheet>
+    <worksheet name='Gender vs Marital Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Avg Claims' datatype='real' name='[Calculation_3678163400970241]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([number_of_open_complaints])' />
+            </column>
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[marital_status]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marital_status]' derivation='None' name='[none:marital_status:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3678163400970241]' derivation='User' name='[usr:Calculation_3678163400970241:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Washington&quot;' user:ui-action-filter='[Action2_2B2B887B21B34B71A5A106E41064A337]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' palette='red_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[usr:Calculation_3678163400970241:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:gender:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[none:marital_status:nk]</cols>
+      </table>
+      <simple-id uuid='{A909CC4A-C7BF-4057-9FF4-B3540F32507F}' />
+    </worksheet>
+    <worksheet name='Policy vs Coverage Heatmap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Coverage' datatype='string' name='[coverage]' role='dimension' type='nominal' />
+            <column-instance column='[coverage]' derivation='None' name='[none:coverage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[policy_type]' derivation='None' name='[none:policy_type:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='Policy Type' datatype='string' name='[policy_type]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Washington&quot;' user:ui-action-filter='[Action2_2B2B887B21B34B71A5A106E41064A337]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' palette='gold_purple_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:policy_type:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[none:coverage:nk]</cols>
+      </table>
+      <simple-id uuid='{11B39298-0249-4D18-8BEC-34CC16E6039A}' />
+    </worksheet>
+    <worksheet name='Premium Adequacy'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Claim to Premium Ratio' datatype='real' name='[Calculation_1695470912868352]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([number_of_open_complaints]) / SUM([monthly_premium_auto])' />
+            </column>
+            <column caption='Monthly Premium Auto' datatype='integer' name='[monthly_premium_auto]' role='measure' type='quantitative' />
+            <column-instance column='[vehicle_class]' derivation='None' name='[none:vehicle_class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[vehicle_size]' derivation='None' name='[none:vehicle_size:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1695470912868352]' derivation='User' name='[usr:Calculation_1695470912868352:qk]' pivot='key' type='quantitative' />
+            <column caption='Vehicle Class' datatype='string' name='[vehicle_class]' role='dimension' type='nominal' />
+            <column caption='Vehicle Size' datatype='string' name='[vehicle_size]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.00vixsk017muol19oroqo1b3tb4j].[usr:Calculation_1695470912868352:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[usr:Calculation_1695470912868352:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.00vixsk017muol19oroqo1b3tb4j].[usr:Calculation_1695470912868352:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.00vixsk017muol19oroqo1b3tb4j].[usr:Calculation_1695470912868352:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>([federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk] / [federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk])</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[usr:Calculation_1695470912868352:qk]</cols>
+      </table>
+      <simple-id uuid='{FE783138-000F-40DC-9E0B-C69B02A1E0D9}' />
+    </worksheet>
+    <worksheet name='Premium by Claim Level'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Claim Category' datatype='string' name='[Calculation_3678163415142402]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [number_of_open_complaints] = 0 THEN &quot;No Claims&quot;&#13;&#10;ELSEIF [number_of_open_complaints] &lt;= 2 THEN &quot;Low (1-2)&quot;&#13;&#10;ELSEIF [number_of_open_complaints] &lt;= 4 THEN &quot;Medium (3-4)&quot;&#13;&#10;ELSE &quot;High (5+)&quot;&#13;&#10;END' />
+            </column>
+            <column-instance column='[monthly_premium_auto]' derivation='Avg' name='[avg:monthly_premium_auto:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[customer]' derivation='CountD' name='[ctd:customer:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer' datatype='string' name='[customer]' role='dimension' type='nominal' />
+            <column caption='Monthly Premium Auto' datatype='integer' name='[monthly_premium_auto]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_3678163415142402]' derivation='None' name='[none:Calculation_3678163415142402:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[monthly_premium_auto]' derivation='Sum' name='[sum:monthly_premium_auto:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:monthly_premium_auto:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[ctd:customer:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:Calculation_3678163415142402:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[avg:monthly_premium_auto:qk]</cols>
+      </table>
+      <simple-id uuid='{D11EE38E-7826-4497-9F09-E47F3279D2ED}' />
+    </worksheet>
+    <worksheet name='Premium vs Claims'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Customer' datatype='string' name='[customer]' role='dimension' type='nominal' />
+            <column caption='Monthly Premium Auto' datatype='integer' name='[monthly_premium_auto]' role='measure' type='quantitative' />
+            <column-instance column='[customer]' derivation='None' name='[none:customer:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[monthly_premium_auto]' derivation='Sum' name='[sum:monthly_premium_auto:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <lod column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:customer:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7031491994857788' />
+                <format attr='mark-transparency' value='180' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:monthly_premium_auto:qk]</cols>
+      </table>
+      <simple-id uuid='{7713C4D3-873A-4634-8C1F-2333CD0916A7}' />
+    </worksheet>
+    <worksheet name='Q1 - Claims by Channel'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Claims by Sales Channel</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column-instance column='[sales_channel]' derivation='None' name='[none:sales_channel:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.00vixsk017muol19oroqo1b3tb4j].[none:sales_channel:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:sales_channel:nk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:sales_channel:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{B80E4BA9-9D1D-4F30-A2AA-37FD56D6DD8A}' />
+    </worksheet>
+    <worksheet name='Q2 - Claims by Channel &amp; Vehicle'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='18'>Claims by Sales Channel &amp; Vehicle Type</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column-instance column='[sales_channel]' derivation='None' name='[none:sales_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[vehicle_class]' derivation='None' name='[none:vehicle_class:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column caption='Vehicle Class' datatype='string' name='[vehicle_class]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[Action (Sales Channel)]'>
+            <groupfilter function='member' level='[sales_channel]' member='&quot;Branch&quot;' user:ui-action-filter='[Action1_15AA333E633D4C8E99FDDD8CC1E4E1DA]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Action (Sales Channel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.00vixsk017muol19oroqo1b3tb4j].[none:sales_channel:nk] / [federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk])</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{6C9FA78E-C8BC-40D4-8AB3-6EDE6EC8C7EE}' />
+    </worksheet>
+    <worksheet name='Q2 - Heatmap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Claims Heatmap: Channel vs. Vehicle Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column-instance column='[sales_channel]' derivation='None' name='[none:sales_channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[vehicle_class]' derivation='None' name='[none:vehicle_class:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column caption='Vehicle Class' datatype='string' name='[vehicle_class]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[Action (Sales Channel)]'>
+            <groupfilter function='member' level='[sales_channel]' member='&quot;Branch&quot;' user:ui-action-filter='[Action1_15AA333E633D4C8E99FDDD8CC1E4E1DA]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Action (Sales Channel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' palette='orange_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:sales_channel:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]</cols>
+      </table>
+      <simple-id uuid='{3F27DAC2-6A0A-4045-80E5-41523736B6B2}' />
+    </worksheet>
+    <worksheet name='Q3 - Claims by Size'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Claims by Vehicle Size</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column-instance column='[vehicle_size]' derivation='None' name='[none:vehicle_size:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column caption='Vehicle Size' datatype='string' name='[vehicle_size]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[Action (Sales Channel)]'>
+            <groupfilter function='member' level='[sales_channel]' member='&quot;Branch&quot;' user:ui-action-filter='[Action1_15AA333E633D4C8E99FDDD8CC1E4E1DA]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Action (Sales Channel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{CD3D63F8-9E0A-4DE8-BA6E-9DEDEAF45AD5}' />
+    </worksheet>
+    <worksheet name='Q3 - Pie Chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Claims Distribution by Vehicle Size</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column-instance column='[vehicle_size]' derivation='None' name='[none:vehicle_size:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[pcto:sum:number_of_open_complaints:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column caption='Vehicle Size' datatype='string' name='[vehicle_size]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk]' />
+              <wedge-size column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[pcto:sum:number_of_open_complaints:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{26631201-A59A-41C6-AB58-72FF0AF04F3B}' />
+    </worksheet>
+    <worksheet name='Revenue Since Last Claim'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Months Since Policy Start' datatype='integer' name='[Calculation_3678163419312131]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;month&apos;, [effective_to_date], TODAY())' />
+            </column>
+            <column caption='Total Premium Paid' datatype='integer' name='[Calculation_3678163419619332]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[monthly_premium_auto] * [Calculation_3678163419312131]' />
+            </column>
+            <column aggregation='None' caption='Months Since Policy Start (bin)' datatype='integer' name='[Months Since Policy Start (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Calculation_3678163419312131]' peg='0' size='6' />
+            </column>
+            <column caption='Effective To Date' datatype='date' datatype-customized='true' name='[effective_to_date]' role='dimension' type='ordinal' />
+            <column caption='Monthly Premium Auto' datatype='integer' name='[monthly_premium_auto]' role='measure' type='quantitative' />
+            <column-instance column='[Months Since Policy Start (bin)]' derivation='None' name='[none:Months Since Policy Start (bin):ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_3678163419619332]' derivation='Sum' name='[sum:Calculation_3678163419619332:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:Calculation_3678163419619332:qk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[none:Months Since Policy Start (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Months Since Policy Start (bin) 2]</column>
+          <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Months Since Policy Start (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{05A12F9D-A758-4DE4-8282-F243B326BB9E}' />
+    </worksheet>
+    <worksheet name='Top Claimants'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Coverage' datatype='string' name='[coverage]' role='dimension' type='nominal' />
+            <column caption='Customer' datatype='string' name='[customer]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column caption='Employmentstatus' datatype='string' name='[employmentstatus]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column caption='Marital Status' datatype='string' name='[marital_status]' role='dimension' type='nominal' />
+            <column-instance column='[customer]' derivation='None' name='[none:customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[employmentstatus]' derivation='None' name='[none:employmentstatus:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[marital_status]' derivation='None' name='[none:marital_status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Washington&quot;' user:ui-action-filter='[Action2_2B2B887B21B34B71A5A106E41064A337]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:customer:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([coverage])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:customer:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.00vixsk017muol19oroqo1b3tb4j].[none:customer:nk]' direction='DESC' measure-to-sort-by='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[none:customer:nk]</column>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.00vixsk017muol19oroqo1b3tb4j].[none:customer:nk] / ([federated.00vixsk017muol19oroqo1b3tb4j].[none:gender:nk] / ([federated.00vixsk017muol19oroqo1b3tb4j].[none:marital_status:nk] / ([federated.00vixsk017muol19oroqo1b3tb4j].[none:education:nk] / ([federated.00vixsk017muol19oroqo1b3tb4j].[none:employmentstatus:nk] / [federated.00vixsk017muol19oroqo1b3tb4j].[none:state:nk])))))</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{87CFEF9A-8E90-4A7A-AD97-7084C1AD526A}' />
+    </worksheet>
+    <worksheet name='Top States by Claims'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]'>
+            <groupfilter function='member' level='[state]' member='&quot;Washington&quot;' user:ui-action-filter='[Action2_2B2B887B21B34B71A5A106E41064A337]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:state:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([number_of_open_complaints])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.00vixsk017muol19oroqo1b3tb4j].[none:state:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[none:state:nk]</column>
+            <column>[federated.00vixsk017muol19oroqo1b3tb4j].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:state:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]</cols>
+      </table>
+      <simple-id uuid='{B4D11CD3-2BBD-48EA-925A-4CBF75AF7BE3}' />
+    </worksheet>
+    <worksheet name='Vehicle Class Analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column caption='Monthly Premium Auto' datatype='integer' name='[monthly_premium_auto]' role='measure' type='quantitative' />
+            <column-instance column='[vehicle_class]' derivation='None' name='[none:vehicle_class:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[monthly_premium_auto]' derivation='Sum' name='[sum:monthly_premium_auto:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column caption='Vehicle Class' datatype='string' name='[vehicle_class]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:monthly_premium_auto:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]' />
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]' />
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:monthly_premium_auto:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]' />
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]</rows>
+        <cols>([federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk] + [federated.00vixsk017muol19oroqo1b3tb4j].[sum:monthly_premium_auto:qk])</cols>
+      </table>
+      <simple-id uuid='{DEB9E975-4513-4BDD-86ED-D5FCE437CA8E}' />
+    </worksheet>
+    <worksheet name='Vehicle Matrix'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (marketing_customer_cleaned)' name='federated.00vixsk017muol19oroqo1b3tb4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00vixsk017muol19oroqo1b3tb4j'>
+            <column-instance column='[monthly_premium_auto]' derivation='Avg' name='[avg:monthly_premium_auto:qk]' pivot='key' type='quantitative' />
+            <column caption='Monthly Premium Auto' datatype='integer' name='[monthly_premium_auto]' role='measure' type='quantitative' />
+            <column-instance column='[vehicle_class]' derivation='None' name='[none:vehicle_class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[vehicle_size]' derivation='None' name='[none:vehicle_size:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Number Of Open Complaints' datatype='integer' name='[number_of_open_complaints]' role='dimension' type='ordinal' />
+            <column-instance column='[number_of_open_complaints]' derivation='Sum' name='[sum:number_of_open_complaints:qk]' pivot='key' type='quantitative' />
+            <column caption='Vehicle Class' datatype='string' name='[vehicle_class]' role='dimension' type='nominal' />
+            <column caption='Vehicle Size' datatype='string' name='[vehicle_size]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk]' value='72' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' />
+              <text column='[federated.00vixsk017muol19oroqo1b3tb4j].[avg:monthly_premium_auto:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]</rows>
+        <cols>[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk]</cols>
+      </table>
+      <simple-id uuid='{245F03E1-9E38-4DEF-93FA-4A1D7F19B8AA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Sales Channel Analysis'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='9' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='7' type-v2='layout-basic' w='77012' x='586' y='1042'>
+              <zone forceUpdate='true' h='29948' id='3' type-v2='text' w='77012' x='586' y='1042'>
+                <formatted-text>
+                  <run fontcolor='#4e79a7' fontsize='22'>SALES CHANNEL ANALYSIS</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#4e79a7' fontsize='22'>Questions, Insights &amp; Business Actions</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#c0c0c0' fontsize='14'>KEY QUESTIONS:</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#c0c0c0' fontsize='14'>1. Which sales channel has more claims?</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#c0c0c0' fontsize='14'>2. Within each sales channel, which kind of car is sending more claims?</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#c0c0c0' fontsize='14'>3. What is the car size which has more claims?</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='29687' id='6' name='Q1 - Claims by Channel' w='38506' x='586' y='30990'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='29687' id='12' name='Q2 - Heatmap' w='38506' x='39092' y='30990'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='38281' id='11' type-v2='text' w='38506' x='586' y='60677'>
+                <formatted-text>
+                  <run bold='true' fontsize='14'>ANSWER 1: Which channel has more claims?</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontsize='14'>FINDING:</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='14'>- Agent: 51,958 claims (37.7%) - HIGHEST → 3,477 customers | 14.9 claims per customer </run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='14'>- Branch: 39,083 claims (28.3%) → 2,567 customers | 15.2 claims per customer </run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='14'>- Call Center: 27,155 claims (19.7%) → 1,765 customers | 15.4 claims per customer </run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='14'>- Web: 19,700 claims (14.3%) - LOWEST → 1,325 customers | 14.9 claims per customer</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontsize='14'>KEY INSIGHT:</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontsize='14'>Agent channel requires immediate attention</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontsize='14'>due to disproportionate claim volum</run>
+                  <run>e</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38281' id='14' type-v2='text' w='38506' x='39092' y='60677'>
+                <formatted-text>
+                  <run bold='true' fontsize='14'>ANSWER 2: Which car type per channel?</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontsize='14'>FINDINGS BY CHANNEL:</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontsize='14'>- Agent: Four-Door Cars ([X] claims)</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontsize='14'>- Branch: [Vehicle Type] ([X] claims)</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontsize='14'>- Call Center: [Vehicle Type] ([X] claims)</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontsize='14'>- Web: [Vehicle Type] ([X] claims)</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontsize='14'>KEY INSIGHT:</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontsize='14'>Four-Door Cars + Agent channel = </run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontsize='14'>highest risk combination in portfolio</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='298' h='97916' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='21816' x='77598' y='1042'>
+              <zone h='13802' id='10' name='Q1 - Claims by Channel' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:sales_channel:nk]' type-v2='color' w='21816' x='77598' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8464' id='13' name='Q2 - Heatmap' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type-v2='color' w='21816' x='77598' y='14844'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='21' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone forceUpdate='true' h='29948' id='3' type-v2='text' w='77012' x='586' y='1042'>
+                  <formatted-text>
+                    <run fontcolor='#4e79a7' fontsize='22'>SALES CHANNEL ANALYSIS</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#4e79a7' fontsize='22'>Questions, Insights &amp; Business Actions</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#c0c0c0' fontsize='14'>KEY QUESTIONS:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#c0c0c0' fontsize='14'>1. Which sales channel has more claims?</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#c0c0c0' fontsize='14'>2. Within each sales channel, which kind of car is sending more claims?</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#c0c0c0' fontsize='14'>3. What is the car size which has more claims?</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='220' h='29687' id='6' is-fixed='true' name='Q1 - Claims by Channel' w='38506' x='586' y='30990'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13802' id='10' name='Q1 - Claims by Channel' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:sales_channel:nk]' type-v2='color' w='21816' x='77598' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='220' h='29687' id='12' is-fixed='true' name='Q2 - Heatmap' w='38506' x='39092' y='30990'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8464' id='13' name='Q2 - Heatmap' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type-v2='color' w='21816' x='77598' y='14844'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='38281' id='11' type-v2='text' w='38506' x='586' y='60677'>
+                  <formatted-text>
+                    <run bold='true' fontsize='14'>ANSWER 1: Which channel has more claims?</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontsize='14'>FINDING:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='14'>- Agent: 51,958 claims (37.7%) - HIGHEST → 3,477 customers | 14.9 claims per customer </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='14'>- Branch: 39,083 claims (28.3%) → 2,567 customers | 15.2 claims per customer </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='14'>- Call Center: 27,155 claims (19.7%) → 1,765 customers | 15.4 claims per customer </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='14'>- Web: 19,700 claims (14.3%) - LOWEST → 1,325 customers | 14.9 claims per customer</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontsize='14'>KEY INSIGHT:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='14'>Agent channel requires immediate attention</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='14'>due to disproportionate claim volum</run>
+                    <run>e</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='38281' id='14' type-v2='text' w='38506' x='39092' y='60677'>
+                  <formatted-text>
+                    <run bold='true' fontsize='14'>ANSWER 2: Which car type per channel?</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontsize='14'>FINDINGS BY CHANNEL:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='14'>- Agent: Four-Door Cars ([X] claims)</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='14'>- Branch: [Vehicle Type] ([X] claims)</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='14'>- Call Center: [Vehicle Type] ([X] claims)</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='14'>- Web: [Vehicle Type] ([X] claims)</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontsize='14'>KEY INSIGHT:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='14'>Four-Door Cars + Agent channel = </run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='14'>highest risk combination in portfolio</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C277EDF2-6127-4645-AC3D-FD5C41F56E86}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='User Profile Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>User Profile of Biggest Claimants</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97664' id='21' param='vert' type-v2='layout-flow' w='98562' x='719' y='1168'>
+            <zone h='97664' id='8' param='horz' type-v2='layout-flow' w='98562' x='719' y='1168'>
+              <zone h='97664' id='6' type-v2='layout-basic' w='84186' x='719' y='1168'>
+                <zone h='27881' id='3' name='Top Claimants' w='84186' x='719' y='1168'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24818' id='5' name='Gender vs Marital Status' w='35972' x='719' y='29049'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='32846' id='10' name='Education vs Employment' w='48214' x='36691' y='29049'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24962' id='12' name='Claims by Location' w='35972' x='719' y='53867'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='23066' id='14' name='Top States by Claims' w='48214' x='36691' y='61895'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='20003' id='15' name='Policy vs Coverage Heatmap' w='35972' x='719' y='78829'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='13871' id='16' name='Claims by Policy Type' w='48214' x='36691' y='84961'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='97664' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='14376' x='84905' y='1168'>
+                <zone h='9489' id='9' name='Gender vs Marital Status' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type-v2='color' w='14376' x='84905' y='1168'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='18394' id='11' name='Education vs Employment' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:employmentstatus:nk]' type-v2='color' w='14376' x='84905' y='10657'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='18394' id='13' name='Claims by Location' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type-v2='size' w='14376' x='84905' y='29051'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='12555' id='17' name='Claims by Policy Type' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:policy_type:nk]' type-v2='color' w='14376' x='84905' y='47445'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'>User Profile of Biggest Claimants</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='41' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='40' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='215' h='27881' id='3' is-fixed='true' name='Top Claimants' w='84186' x='719' y='1168'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='191' h='24818' id='5' is-fixed='true' name='Gender vs Marital Status' w='35972' x='719' y='29049'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9489' id='9' name='Gender vs Marital Status' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type-v2='color' w='14376' x='84905' y='1168'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='32846' id='10' is-fixed='true' name='Education vs Employment' w='48214' x='36691' y='29049'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18394' id='11' name='Education vs Employment' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:employmentstatus:nk]' type-v2='color' w='14376' x='84905' y='10657'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='192' h='24962' id='12' is-fixed='true' name='Claims by Location' w='35972' x='719' y='53867'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18394' id='13' name='Claims by Location' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type-v2='size' w='14376' x='84905' y='29051'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='177' h='23066' id='14' is-fixed='true' name='Top States by Claims' w='48214' x='36691' y='61895'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='152' h='20003' id='15' is-fixed='true' name='Policy vs Coverage Heatmap' w='35972' x='719' y='78829'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='103' h='13871' id='16' is-fixed='true' name='Claims by Policy Type' w='48214' x='36691' y='84961'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12555' id='17' name='Claims by Policy Type' pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:policy_type:nk]' type-v2='color' w='14376' x='84905' y='47445'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7EA7599A-5BA0-453A-BC5C-1E7A45F37C7C}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='0.875' source-height='30'>
+    <window class='worksheet' name='Q1 - Claims by Channel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:sales_channel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{764C2D32-9FD4-49BD-A3C4-16B63C37F641}' />
+    </window>
+    <window class='worksheet' name='Channel Vehicle Numbers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{27E03D08-3526-448A-9A97-FE05D262AAA3}' />
+    </window>
+    <window class='worksheet' name='Q2 - Claims by Channel &amp; Vehicle'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7E864289-4A4D-4998-B032-DC0BD28E6734}' />
+    </window>
+    <window class='worksheet' name='Q2 - Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{46D30E74-9BC3-48B1-8F14-5F9A32CB694B}' />
+    </window>
+    <window class='worksheet' name='Q3 - Claims by Size'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1E5E77CB-18CF-4B52-83B7-4676EDE1433D}' />
+    </window>
+    <window class='worksheet' name='Q3 - Pie Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_size:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CD1C6FAF-A79A-4CA8-80E6-0B26E8D07F4D}' />
+    </window>
+    <window class='worksheet' name='Top Claimants'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BE14DE56-437E-45C4-A5C0-471E8A0FFD1A}' />
+    </window>
+    <window class='worksheet' name='Claims by Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{43E4427E-EFC0-460C-A9A6-235A371C081F}' />
+    </window>
+    <window class='worksheet' name='Claims by Marital Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:marital_status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{45301427-7DAB-438D-95A1-0157BF46E98A}' />
+    </window>
+    <window class='worksheet' name='Gender vs Marital Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B090931-9422-4EB8-A69F-B91C6B33C68A}' />
+    </window>
+    <window class='worksheet' name='Claims by Education'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:education:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2BAB6143-3E63-4285-B28F-6156062839B9}' />
+    </window>
+    <window class='worksheet' name='Claims by Employment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:employmentstatus:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{925E8660-D440-4E1E-8D13-0D4C02C410BE}' />
+    </window>
+    <window class='worksheet' name='Education vs Employment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:employmentstatus:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7A64AF56-E763-4565-AA73-69FEED2E544B}' />
+    </window>
+    <window class='worksheet' name='Claims by Location'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{00E3D9A0-1915-452E-B9AA-6580C439B81A}' />
+    </window>
+    <window class='worksheet' name='Top States by Claims'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{83BF8018-AED9-4C76-999F-44B8926F2289}' />
+    </window>
+    <window class='worksheet' name='Claims by Policy Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:policy_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{32ABC622-6116-40F1-A56B-833D404CFEF0}' />
+    </window>
+    <window class='worksheet' name='Claims by Coverage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:coverage:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{556B46CE-7F6D-4524-9251-81C2337CEE3E}' />
+    </window>
+    <window class='worksheet' name='Policy vs Coverage Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B22BE69A-E331-4198-BCB9-DB02549647F2}' />
+    </window>
+    <window class='dashboard' name='User Profile Analysis'>
+      <viewpoints>
+        <viewpoint name='Claims by Location'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Claims by Policy Type' />
+        <viewpoint name='Education vs Employment' />
+        <viewpoint name='Gender vs Marital Status' />
+        <viewpoint name='Policy vs Coverage Heatmap' />
+        <viewpoint name='Top Claimants' />
+        <viewpoint name='Top States by Claims' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{92DB7760-5317-4F75-B684-35F86C03045E}' />
+    </window>
+    <window class='worksheet' name='Claims by Day of Week'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:Effective To Date (Weekdays):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{38CF093F-D9D9-4AC2-AAA0-D16BAFEFE941}' />
+    </window>
+    <window class='worksheet' name='Premium vs Claims'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{516EAD75-E560-4FD3-BB44-B01C26CCF7A0}' />
+    </window>
+    <window class='worksheet' name='Premium by Claim Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:monthly_premium_auto:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8EEC0330-21EA-4B61-A602-47D8E773690C}' />
+    </window>
+    <window class='worksheet' name='Revenue Since Last Claim'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7B99D67C-7B83-4B74-8610-6D65716D2C11}' />
+    </window>
+    <window class='worksheet' name='Claims Trend by Vehicle Class'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66671C80-959B-4E86-8319-BA632710A567}' />
+    </window>
+    <window class='worksheet' name='Vehicle Class Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.00vixsk017muol19oroqo1b3tb4j].[none:vehicle_class:nk]&#10;[federated.00vixsk017muol19oroqo1b3tb4j].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{96285DBE-A8B7-4FFE-B0F5-E92DEC80E59C}' />
+    </window>
+    <window class='worksheet' name='Claims by Vehicle Size'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.00vixsk017muol19oroqo1b3tb4j].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2D6F59B9-A1F9-4A2E-A4E3-75D7DE04A38E}' />
+    </window>
+    <window class='worksheet' name='Vehicle Matrix'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[sum:number_of_open_complaints:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1357D1EA-CFC8-4D6E-BE24-4E37F2E10C1A}' />
+    </window>
+    <window class='worksheet' name='Premium Adequacy'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00vixsk017muol19oroqo1b3tb4j].[usr:Calculation_1695470912868352:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{248C9C83-C136-4A20-A816-32F8B2C4207F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Sales Channel Analysis'>
+      <viewpoints>
+        <viewpoint name='Q1 - Claims by Channel' />
+        <viewpoint name='Q2 - Heatmap' />
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{52BC45DF-3E5C-415C-903C-05647EF4E90F}' />
+    </window>
+  </windows>
+</workbook>
